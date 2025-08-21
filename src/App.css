@@ -36,3 +36,387 @@
     transform: rotate(360deg);
   }
 }
+/* src/BirthdayWishes.css */
+
+.birthday-container {
+  /* Set up the dark background */
+  background-color: #0d0d26;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide anything that goes off the screen */
+  position: relative;
+}
+
+.night-sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Star animation */
+.night-sky::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Create a starry background using radial gradients */
+  background: radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+              radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+              /* Add more gradients to create more stars */
+              radial-gradient(2px 2px at 80px 10px, #ddd, rgba(0,0,0,0));
+  background-size: 100px 100px;
+  animation: move-stars 20s linear infinite;
+}
+
+@keyframes move-stars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.wishes-text {
+  z-index: 10; /* Keep the text on top of the animations */
+  text-align: center;
+  
+}
+/* src/BirthdayWishes.css - Add this to the existing file */
+
+.balloons-container {
+  position: absolute;
+  bottom: -100px; /* Start below the screen */
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+/* This is a single balloon element */
+.balloon {
+  width: 50px;
+  height: 35px;
+  background-color: #ff4785; /* Pink color */
+  border-radius: 60% 60% 40% 40% / 60% 60% 40% 40%;
+  animation: fly-up 10s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Add more balloons with different colors and animation delays */
+.balloon:nth-child(2) {
+  background-color: #479fff; /* Blue */
+  animation-delay: 2s;
+}
+
+.balloon:nth-child(3) {
+  background-color: #ffb424; /* Orange */
+  animation-delay: 4s;
+}
+.balloon:nth-child(4) {
+  background-color: #38cdcf; /* Orange */
+  animation-delay: 8s;
+}
+.balloon:nth-child(5) {
+  background-color: #9df720; /* Orange */
+  animation-delay: 12s;
+}
+.balloon:nth-child(6) {
+  background-color: #e924ff; /* Orange */
+  animation-delay: 16s;
+}
+.balloon:nth-child(7) {
+  background-color: #e96c8b; /* Orange */
+  animation-delay: 18s;
+}
+.balloon:nth-child(8) {
+  background-color: #e90707; /* Orange */
+  animation-delay: 24s;
+}
+.balloon:nth-child(9) {
+  background-color: #079c75; /* Orange */
+  animation-delay: 28s;
+}
+.balloon:nth-child(10) {
+  background-color: #4f05ef; /* Blue */
+  animation-delay: 34s;
+}
+
+.balloon:nth-child(11) {
+  background-color: #d6820c; /* Orange */
+  animation-delay: 40s;
+}
+.balloon:nth-child(12) {
+  background-color: #3f5ba8; /* Orange */
+  animation-delay: 42s;
+}
+.balloon:nth-child(13) {
+  background-color: #1bb40a; /* Orange */
+  animation-delay: 46s;
+}
+.balloon:nth-child(14) {
+  background-color: #dd7be8; /* Orange */
+  animation-delay: 50s;
+}
+.balloon:nth-child(15) {
+  background-color: #f1a517; /* Orange */
+  animation-delay: 54s;
+}
+.balloon:nth-child(16) {
+  background-color: #e3b6b6; /* Orange */
+  animation-delay: 60s;
+}
+.balloon:nth-child(17) {
+  background-color: #1e7f8b; /* Orange */
+  animation-delay: 66s;
+}
+.balloon:nth-child(18) {
+  background-color: #f84848; /* Orange */
+  animation-delay: 72s;
+}
+.dear-text{
+  font-family: "emoji";
+}
+
+
+@keyframes fly-up {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+/* Main container styles */
+.birthday-page {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+}
+
+/* Wishes text styles */
+.wishes-text {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #fde047;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  animation: fade-in-up 1s ease-out;
+}
+
+/* Cake and elements container */
+.cake-container {
+  position: relative;
+  transform: scale(0.85);
+}
+
+/* Cake plate */
+.cake-plate {
+  width: 20rem;
+  height: 2rem;
+  background-color: #f5f2f2;
+  border-radius: 9999px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 0.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Cake base layer */
+.cake-base, .cake-mid, .cake-top {
+  position: relative;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  box-shadow: inset 0 2px 4px 0 rgba(251, 255, 255, 0.06);
+  transform-origin: bottom;
+}
+
+.cake-base {
+  width: 16rem;
+  height: 6rem;
+  background-color: #910cca;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pop-in 1s ease-out forwards;
+}
+
+.cake-mid {
+  width: 14rem;
+  height: 4rem;
+  background-color: #0bb98a;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pop-in-delayed 1.5s ease-out forwards;
+}
+
+.cake-top {
+  width: 10rem;
+  height: 3rem;
+  background-color: #f687b3;
+  margin-left: auto;
+  margin-right: auto;
+  animation: pop-in-delayed-2 2s ease-out forwards;
+}
+
+/* Frosting drizzle */
+.cake-frosting {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2rem;
+  background-color: #fbb6d4;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  z-index: 10;
+}
+
+/* Candles container */
+.candles-container {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.candle {
+  width: 0.5rem;
+  height: 2rem;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(235, 7, 223, 0.1), 0 2px 4px -1px rgba(234, 7, 7, 0.06);
+}
+
+.candle-white { background-color: #fff; animation: fade-in-up-3s-delay 3s ease-out forwards; }
+.candle-red { background-color: #ef4444; animation: fade-in-up-4s-delay 4s ease-out forwards; }
+.candle-blue { background-color: #3b82f6; animation: fade-in-up-5s-delay 5s ease-out forwards; }
+
+.flame {
+  width: 0.5rem;
+  height: 1rem;
+  background-color: #fde047;
+  border-radius: 9999px;
+  margin: 0 auto;
+  position: relative;
+  top: -0.5rem;
+  transform-origin: bottom;
+  box-shadow: 0 0 10px #facc15;
+  animation: flicker 1.5s infinite;
+}
+
+.flame-delayed {
+  animation: flicker-delayed 1.5s infinite;
+}
+
+/* --- Animation Keyframes --- */
+@keyframes flicker {
+  0%, 100% { transform: scaleY(1); opacity: 1; }
+  25% { transform: scaleY(1.1); opacity: 0.95; }
+  50% { transform: scaleY(0.8); opacity: 1; }
+  75% { transform: scaleY(1.1); opacity: 0.95; }
+}
+@keyframes flicker-delayed {
+  0%, 100% { transform: scaleY(0.9); opacity: 1; }
+  50% { transform: scaleY(1.1); opacity: 0.9; }
+  75% { transform: scaleY(0.8); opacity: 1; }
+}
+@keyframes pop-in {
+  0% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes pop-in-delayed {
+  0% { transform: scaleY(0); opacity: 0; }
+  50% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes pop-in-delayed-2 {
+  0% { transform: scaleY(0); opacity: 0; }
+  75% { transform: scaleY(0); opacity: 0; }
+  100% { transform: scaleY(1); opacity: 1; }
+}
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up-3s-delay {
+  0% { opacity: 0; transform: translateY(20px); }
+  30% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up-4s-delay {
+  0% { opacity: 0; transform: translateY(20px); }
+  40% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fade-in-up-5s-delay {
+  0% { opacity: 0; transform: translateY(20px); }
+  50% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.air-text {
+  
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ceddde; /* Initial text color */
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            text-align: center;
+            /* Apply the animation */
+            animation: air-effect 5s infinite ease-in-out;
+            align-self: flex-end;
+        }
+
+        /* The @keyframes rule for the animation */
+        @keyframes air-effect {
+            0% {
+                /* Initial state: subtle shadow and slight movement */
+                text-shadow: 0 0 5px #a0a0ff, 0 0 10px #e6e6ff;
+                transform: translateY(0) scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                /* Mid-animation state: more prominent shadow, color change, and lift */
+                text-shadow: 0 0 20px #94a3b8, 0 0 40px #60a5fa, 0 0 60px #e0e7ff;
+                transform: translateY(-5px) scale(1.02);
+                opacity: 1;
+            }
+            100% {
+                /* End state: returns to initial state */
+                text-shadow: 0 0 5px #a0a0ff, 0 0 10px #e6e6ff;
+                transform: translateY(0) scale(1);
+                opacity: 0.8;
+            }
+        }
+
+        /* Media queries for smaller screens to adjust font size */
+        @media (max-width: 768px) {
+            .air-text {
+                font-size: 2.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .air-text {
+                font-size: 1.5rem;
+            }
+        }
