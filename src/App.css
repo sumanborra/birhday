@@ -182,7 +182,8 @@
 }
 .balloon:nth-child(18) {
   background-color: #f84848; /* Orange */
-  animation-delay: 72s;
+  animation-delay: 72
+  s;
 }
 .dear-text{
   font-family: "emoji";
@@ -420,3 +421,8 @@
                 font-size: 1.5rem;
             }
         }
+.telugu-text{
+  font-size: 12px;
+  font-weight: 600;
+  color: antiquewhite;
+}
