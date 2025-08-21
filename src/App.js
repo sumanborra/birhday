@@ -86,7 +86,10 @@ const BirthdayWishes = () => {
       <div className="wishes-text air-text">
         <h1><span className="dear-text">DeaR</span> UMA!</h1>
         <p>Wishing you all the best on your special day.</p>
-        <p className='telugu-text'>నా ప్రియమైన మహీ,
+      </div>
+      <div className='telugu-text-container'>
+        
+      <p className='telugu-text'>నా ప్రియమైన మహీ,
 
 ఈ విషయం నీతో ఇలా చెప్పాలని నేను అస్సలు అనుకోలేదు. మనం మాట్లాడుకుంది కొన్ని రోజులే అయినా, నువ్వు నాకెంతో దగ్గరైపోయావు. ఈ మెసేజ్ చదివిన తర్వాత నీ రియాక్షన్ ఏంటో నాకు తెలుసు, కానీ రేపటి నుంచి నువ్వు నాతో మాట్లాడతావో లేదో నాకు తెలియదు.
 
@@ -94,7 +97,6 @@ const BirthdayWishes = () => {
 
 కానీ, నీకు ఇంకొకరు ఇష్టమని తెలిసిన తర్వాత, మీ ఇద్దరి మధ్య గొడవలకు కారణం నేను కాకూడదని అనుకుంటున్నాను. నువ్వు ఈ హైదరాబాద్‌లో ఉన్నన్ని రోజులు ఎలాంటి సహాయం కావాలన్నా నన్ను అడుగు. ఇది నా నెంబర్.</p>
       </div>
-      
     </div>
   );
 };
