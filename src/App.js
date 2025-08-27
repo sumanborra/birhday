@@ -1,16 +1,23 @@
 // src/BirthdayWishes.js
 
 import React from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 const BirthdayWishes = () => {
+
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth();
+  const result = (day === 18 && month===8)?<h1>Happy Birthday!</h1>:<h1>Advanced Happy Birthday!</h1>;
   return (
     <div className="birthday-container">
       {/* This is where your animated elements will go */}
       <div className="night-sky">
         {/* Stars will be rendered here */}
+        
       </div>
-
+    
       <div className="balloons-container">
         
         <div className="balloon"></div>
@@ -37,7 +44,7 @@ const BirthdayWishes = () => {
       <div className="cake-container">
       <div className="birthday-page">
       <div className="wishes-text">
-        <h1>Happy Birthday!</h1>
+        {result}
       </div>
 
       <div className="cake-container">
@@ -82,7 +89,13 @@ const BirthdayWishes = () => {
       </div>
     </div>
       </div>
-
+      
+      
+      <audio autoplay={true} controls>
+        <source src="/WhatsApp Audio 2025-08-27 at 11.14.43.mpeg" type="audio/mpeg" />
+        
+      </audio>
+ 
       <div className="wishes-text air-text">
         <h1><span className="dear-text">DeaR</span> UMA!</h1>
         <p>Wishing you all the best on your special day.</p>
@@ -97,6 +110,7 @@ const BirthdayWishes = () => {
 
 కానీ, నీకు ఇంకొకరు ఇష్టమని తెలిసిన తర్వాత, మీ ఇద్దరి మధ్య గొడవలకు కారణం నేను కాకూడదని అనుకుంటున్నాను. నువ్వు ఈ హైదరాబాద్‌లో ఉన్నన్ని రోజులు ఎలాంటి సహాయం కావాలన్నా నన్ను అడుగు. ఇది నా నెంబర్.</p>
       </div>
+      
     </div>
   );
 };
