@@ -1,7 +1,7 @@
 // src/BirthdayWishes.js
 
 import React from 'react';
-import { useState, useEffect } from 'react';
+/*import { useState, useEffect } from 'react';*/
 import './App.css';
 
 const BirthdayWishes = () => {
