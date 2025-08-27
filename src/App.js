@@ -90,11 +90,6 @@ const BirthdayWishes = () => {
     </div>
       </div>
       
-      
-      <audio autoplay={true} controls>
-        <source src="/WhatsApp Audio 2025-08-27 at 11.14.43.mpeg" type="audio/mpeg" />
-        
-      </audio>
  
       <div className="wishes-text air-text">
         <h1><span className="dear-text">DeaR</span> UMA!</h1>
