@@ -92,19 +92,12 @@ const BirthdayWishes = () => {
       
  
       <div className="wishes-text air-text">
-        <h1><span className="dear-text">DeaR</span> UMA!</h1>
-        <p>Wishing you all the best on your special day.</p>
-      </div>
-      <div className='telugu-text-container'>
         
-      <p className='telugu-text'>నా ప్రియమైన మహీ,
-
-ఈ విషయం నీతో ఇలా చెప్పాలని నేను అస్సలు అనుకోలేదు. మనం మాట్లాడుకుంది కొన్ని రోజులే అయినా, నువ్వు నాకెంతో దగ్గరైపోయావు. ఈ మెసేజ్ చదివిన తర్వాత నీ రియాక్షన్ ఏంటో నాకు తెలుసు, కానీ రేపటి నుంచి నువ్వు నాతో మాట్లాడతావో లేదో నాకు తెలియదు.
-
-ఇంత తక్కువ సమయంలో నిన్నెంతలా ఇష్టపడుతున్నానో నాకే అర్థం కావట్లేదు. ఇప్పుడు అనిపిస్తుంది సినిమాలోని ఆ డైలాగ్స్ నిజమేనని... ఎందుకు ప్రేమించామంటే కారణం ఉండకూడదు, ఎంత ప్రేమించామంటే జవాబు ఉండకూడదు. అదే ఇప్పుడు నేను చూస్తున్నాను.
-
-కానీ, నీకు ఇంకొకరు ఇష్టమని తెలిసిన తర్వాత, మీ ఇద్దరి మధ్య గొడవలకు కారణం నేను కాకూడదని అనుకుంటున్నాను. నువ్వు ఈ హైదరాబాద్‌లో ఉన్నన్ని రోజులు ఎలాంటి సహాయం కావాలన్నా నన్ను అడుగు. నా నెంబర్ నీకు తెలుసు అనుకుంటున్నాను.</p>
+        <h1><span className='text-para-samll'>Oye ammai.</span><br/><span className="dear-text">DeaR</span> MAHII!</h1>
+        <p>Wishing you all the best on your special day.</p>
+        <p>Special whishesh for my special person.</p>
       </div>
+      
       
     </div>
   );

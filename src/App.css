@@ -436,6 +436,13 @@
   color: antiquewhite;
 }
 
-
+.text-para-samll{
+  line-height: 0.1;
+  color: #e90707;
+  font-size: 18px;
+  margin-bottom: 0px;
+  padding: 0px;
+  align-self: flex-start;
+}
 
  
