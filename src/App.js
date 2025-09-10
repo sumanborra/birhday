@@ -38,7 +38,7 @@ const BirthdayWishes = () => {
         <div className="balloon"></div>
         <div className="balloon"></div>
         <div className="balloon"></div>
-
+        
       </div>
 
       <div className="cake-container">
@@ -46,7 +46,11 @@ const BirthdayWishes = () => {
       <div className="wishes-text">
         {result}
       </div>
-
+    <div className='cake-heart-container'>
+      <div className="heart">
+        
+      </div>
+      <div>
       <div className="cake-container">
         {/* Cake plate */}
         <div className="cake-top">
@@ -83,14 +87,17 @@ const BirthdayWishes = () => {
           <div className="candle-container">
             <div className="candle candle-blue">
               <div className="flame"></div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
       </div>
       
- 
+    </div>
+      </div>
+      </div>
+    
       <div className="wishes-text air-text">
         
         <h1><span className='text-para-samll'>Oye ammai.</span><br/><span className="dear-text">DeaR</span> MAHII!</h1>

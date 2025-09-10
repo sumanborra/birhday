@@ -111,6 +111,7 @@
   border-radius: 60% 60% 40% 40% / 60% 60% 40% 40%;
   animation: fly-up 10s ease-in-out infinite;
   opacity: 0;
+  
 }
 
 /* Add more balloons with different colors and animation delays */
@@ -182,9 +183,9 @@
 }
 .balloon:nth-child(18) {
   background-color: #f84848; /* Orange */
-  animation-delay: 72
-  s;
+  animation-delay: 72s;
 }
+
 .dear-text{
   font-family: "emoji";
 }
@@ -445,4 +446,58 @@
   align-self: flex-start;
 }
 
- 
+.heart {
+  position: relative;
+  width: 10px;
+  height: 9px;
+  margin-left: 0px;
+  align-self: flex-end;
+  /* Add animation properties */
+  animation: beat 1.2s infinite; /* Name, duration, iteration-count */
+  transform-origin: center; /* Ensures scaling is from the center */
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 50px;
+  height: 80px;
+  background-color: red;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* Define the heartbeat animation */
+@keyframes beat {
+  0% {
+    transform: scale(1); /* Normal size */
+  }
+  25% {
+    transform: scale(1.1); /* Slightly larger */
+  }
+  50% {
+    transform: scale(1); /* Back to normal */
+  }
+  75% {
+    transform: scale(1.1); /* Slightly larger again */
+  }
+  100% {
+    transform: scale(1); /* Normal size */
+  }
+}
+.cake-heart-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
